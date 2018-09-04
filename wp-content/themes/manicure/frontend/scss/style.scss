@@ -1,0 +1,102 @@
+/* VARIABLES */
+
+@import "partials/common/variables";
+@import "partials/common/fonts";
+
+
+/* VARIABLES END */
+
+
+/* -------------------- */
+
+
+/* VENDOR */
+
+@import "partials/vendor/normalize";
+@import "partials/vendor/clearfix";
+@import "partials/vendor/bootstrap-grid/bootstrap-grid";
+@import "partials/vendor/bootstrap-grid/responsive-utilities";
+
+/* VENDOR END */
+
+
+/* -------------------- */
+
+
+/* COMMON */
+
+@import "partials/common/best-practices";
+@import "partials/common/common";
+@import "partials/common/service-classes";
+
+/* COMMON END */
+
+
+/* -------------------- */
+
+
+/* LAYOUT */
+
+@import "partials/layout/layout";
+
+/* LAYOUT END */
+
+
+/* -------------------- */
+
+
+/* BLOCKS */
+
+@import "partials/components/blocks/mixins/placeholder";
+@import "partials/components/blocks/menu-btn";
+@import "partials/components/blocks/swipe-menu";
+@import "partials/components/blocks/popup";
+@import "partials/components/blocks/btn";
+@import "partials/components/blocks/slider";
+@import "partials/components/blocks/timer";
+@import "partials/components/blocks/form";
+@import "partials/components/blocks/title";
+@import "partials/components/blocks/video";
+@import "partials/components/blocks/map";
+
+/* BLOCKS END*/
+
+/* SECTIONS */
+@import "partials/components/blocks/hero";
+@import "partials/components/blocks/sub-section";
+@import "partials/components/blocks/program";
+@import "partials/components/blocks/partners";
+@import "partials/components/blocks/diplom";
+@import "partials/components/blocks/action";
+@import "partials/components/blocks/advantages";
+@import "partials/components/blocks/about-school";
+@import "partials/components/blocks/realy-study";
+@import "partials/components/blocks/teachers";
+@import "partials/components/blocks/numbers";
+@import "partials/components/blocks/reviews";
+@import "partials/components/blocks/photo";
+@import "partials/components/blocks/contacts";
+
+
+/* SECTIONS END*/
+/* -------------------- */
+
+
+/* GENERAL */
+
+@import "partials/components/header";
+@import "partials/components/footer";
+
+/* GENERAL END */
+
+
+/* -------------------- */
+
+
+/* PAGES */
+
+
+/* PAGES END */
+
+
+/* -------------------- */

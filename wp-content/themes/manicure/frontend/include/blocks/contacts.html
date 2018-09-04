@@ -1,0 +1,35 @@
+<section class="section contacts" id="contacts">
+    <img src="assets/images/bg/contacts-bg.png" alt="img" class="contacts_bg">
+    <div class="container-fluid">
+        <div class="contacts_content">
+
+            <div id="map" class="contacts_map map"></div>
+            <div class="contacts_text">
+                <div class="title">Контакты</div>
+                <div class="contacts_desc">
+                    <p><strong>Телефон:</strong> +7 (495) 181-11-21</p>
+                    <p><strong>Адрес: </strong> г. Москва, м. Красносельская, м. Бауманская, ул. Ольховская, д. 22</p>
+                    <p><strong>Как добраться: </strong> ВДНХ, посл. вагон из центра, 10 мин. пешком. Выйти из стеклянных
+                        дверей метро, повернуть направо и налево подняться по ступенькам. Далее идти прямо до угла дома
+                        и повернуть направо на ул. К </p>
+                    <p><strong>График работы:</strong> Пн-Сб с 10:00 до 18:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var mapConfig = {
+        maps: [{
+            id: "map",
+            markers: [{
+                center: [55.776846, 37.672528]
+            }],
+            mapCenter: [55.776846, 37.672528],
+            icon: 'assets/images/icon/marker.png',
+            zoom: 15,
+
+        }]
+
+    }
+</script>
