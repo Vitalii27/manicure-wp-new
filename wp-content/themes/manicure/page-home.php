@@ -15,6 +15,7 @@ get_header(); ?>
 <?php get_template_part( './template-parts/sections/sub-section' ); ?>
 <?php get_template_part( './template-parts/sections/program' ); ?>
 <?php get_template_part( './template-parts/sections/partners' ); ?>
+<?php get_template_part( './template-parts/sections/grafic' ); ?>
 <?php get_template_part( './template-parts/sections/diplom' ); ?>
 <?php get_template_part( './template-parts/sections/sing-up' ); ?>
 <?php get_template_part( './template-parts/sections/action' ); ?>

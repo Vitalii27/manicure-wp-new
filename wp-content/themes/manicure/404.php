@@ -7,54 +7,94 @@
  * @package manicure
  */
 
-get_header();
+//get_header();
 ?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <?php wp_head(); ?>
+</head>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'manicure' ); ?></h1>
-				</header><!-- .page-header -->
+<body <?php body_class(); ?>>
+<header class="header js-header is-fixed" id="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header_container">
+                <div class="header_logo">
+                    <a href="#hero" class="header_link"> <img src="http://ua-nilson.com.ua/projects/manicure/wp-content/uploads/2018/09/Лого.png" alt="logo" class="header_img">
+                        <p><strong>Учебный Центр</strong><br>
+                            <strong>Маникюра и Педикюра</strong></p>
+                    </a>
+                </div>
+                <?php get_template_part('./template-parts/blocks/swipe-menu'); ?>   <?php get_template_part('./template-parts/blocks/menu-btn'); ?>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'manicure' ); ?></p>
+                <div class="header_btn">
+                    <a href="#" class="header_btn-link btn">Оплатить<br>онлайн</a>
+                </div>
+                <div class="header_phone">
+                    <div class="header_number">
+                        <div>+7 (495) 181-11-21</div>
+                        <a href="#sing-up" class="header_call js-pop-up">Заказать Звонок</a>
+                    </div>
+                </div>
 
-					<?php
-					get_search_form();
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="section-error" style="background-image: url(../../wp-content/themes/manicure/assets/images/bg/404-bg.png)">
+        <div class="container-fluid">
+            <div class="section-error_text-opacity">
+                404
+            </div>
+            <div class="section-error_text">
+                <div class="section-error_text-title">oops !</div>
+                <div class="section-error_text-bottom">Такой страницы не существует!</div>
+                <a href="<?php echo home_url() ?>" class="sub-section_link btn">перейти на главную</a>
+            </div>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+        </div>
+    </section>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'manicure' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
+<footer class="footer" id="footer">
+    <div class="container-fluid">
+        <div class="footer_container">
+            <div class="footer_logo">
+                <a href="#hero" class="footer_link"> <img src="http://manicure-wp-new/wp-content/uploads/2018/08/logo.png" alt="logo" class="footer_img">
+                    <p>Учебный центр<br>
+                        маникюра и педикюра</p>
+                </a>
+            </div>
+            <div class="footer_copy">
+                <div class="footer_menu">
+                    <?php
+                    $args = array(
+                        'theme_location' => 'footer',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'menu_class' => '',
+                        'walker' => '',
+                        'container' => 'ul',
 
-					<?php
-					/* translators: %1$s: smiley */
-					$manicure_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'manicure' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$manicure_archive_content" );
+                    );
+                    wp_nav_menu($args);
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+                    ?>
+                           </div>
+                <div class="footer_copy-text">Школа маникюра и педикюра в Москве © 2018 Все права защищены</div>
+                <a href="https://sait-sozdanie.com/" target="_blank" class="footer_link-web">Веб студия</a>
+            </div>
+            <div class="footer_social">
+                <a href=""><img src="http://manicure-wp-new/wp-content/uploads/2018/08/vk.png" alt="icon"></a>
+                <a href=""><img src="http://manicure-wp-new/wp-content/uploads/2018/08/fb.png" alt="icon"></a>
+                <a href=""><img src="http://manicure-wp-new/wp-content/uploads/2018/08/inst.png" alt="icon"></a>
+            </div>
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </div>
 
-<?php
-get_footer();
+    </div>
+</footer>
