@@ -40,7 +40,42 @@ section, .section {
 img{
   max-width: 100%;
 }
+.arrow-to-up{
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: $orange;
+  border-radius: 50%;
+  transition: opacity .2s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 80;
+  a{
+    display: block;
+  }
+  &:hover{
+    opacity: 1;
+  }
+  .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-size: 2.5rem;
+    z-index: 81;
+  }
+}
 
+
+@media only screen and (max-width: $screen-xs-max) {
+  .arrow-vissible{
+    opacity: .8;
+    visibility: visible;
+  }
+}
 //@media only screen and (max-width: $screen-md-max) {
 //  section {
 //    padding: 0 15px;

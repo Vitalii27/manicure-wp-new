@@ -53,6 +53,9 @@
   &_link-web{
     font-size: 13px;
     color: $orange;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 

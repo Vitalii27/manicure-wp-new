@@ -41,8 +41,13 @@
                 </div>
                 <?php if (get_field('footer-menu-text')): ?>
                     <div class="footer_copy-text"><?php the_field('footer-menu-text') ?></div>
-                <?php if (get_field('footer-menu-text')): ?>
-                    <a href="<?php the_field('link_web') ?>" target="_blank" class="footer_link-web"><?php the_field('link_web_text') ?></a>
+                    <?php if (get_field('footer-menu-text')): ?>
+                        <a href="<?php the_field('link_web') ?>" target="_blank"
+                           class="footer_link-web"><?php the_field('link_web_text') ?></a>
+                    <?php endif; ?>
+                    <?php if (get_field('dates-link')): ?>
+                        <a href="<?php echo get_template_directory_uri() ?>/assets/pdf/dates.pdf" target="_blank"
+                           class="footer_link-web"><?php the_field('dates-link') ?></a>
                     <?php endif; ?>
                 <?php endif; ?>
             </div>

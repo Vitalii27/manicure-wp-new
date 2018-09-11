@@ -2,7 +2,7 @@
 
 function get_css() {
     wp_enqueue_style('theme-style', get_stylesheet_uri());
-//    wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     wp_enqueue_style('plyr', 'https://cdn.plyr.io/3.4.3/plyr.css');
 
     wp_enqueue_style( 'slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );

@@ -15,5 +15,16 @@ jQuery(function($) {
             }
         }
     });
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop){
+
+            $('.arrow-to-up').addClass('arrow-vissible')
+        } else {
+            $('.arrow-to-up').removeClass('arrow-vissible')
+        }
+        lastScrollTop = st;
+    });
 });
 /* smooth scrolling end*/
