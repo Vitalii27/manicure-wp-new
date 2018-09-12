@@ -74,6 +74,8 @@
 
 }
 
+
+
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close,
 .mfp-close-btn-in .mfp-close {
@@ -101,7 +103,12 @@
     color: $orange !important;
   }
 }
-
+.mfp-figure{
+  .mfp-close{
+    right: 0;
+    top: 0;
+  }
+}
 //.mfp-close {
 //    right: 2%;
 //    top: 1%;

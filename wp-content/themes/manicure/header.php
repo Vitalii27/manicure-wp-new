@@ -51,9 +51,9 @@
                     <a href="#" class="header_btn-link btn">Оплатить<br>онлайн</a>
                 </div>
                 <div class="header_phone">
-                    <div class="header_number">
+                    <div class="header_number-wrapp">
                         <?php if (get_field('header_tel')): ?>
-                            <div><?php the_field('header_tel') ?></div>
+                            <div class="header_number"><?php the_field('header_tel') ?></div>
                         <?php endif; ?>
                         <?php if (get_field('header_tel-text')): ?>
                             <a href="#sing-up" class="header_call js-pop-up"><?php the_field('header_tel-text') ?></a>

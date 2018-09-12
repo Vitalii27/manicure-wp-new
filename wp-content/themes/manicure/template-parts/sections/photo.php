@@ -9,9 +9,11 @@
                     <?php while (have_rows('photo-list')):
                         the_row(); ?>
                         <div class="photo_slider-elem">
-                            <div class="photo_slider-wrapp">
-                                <img src="<?php the_sub_field('photo-image'); ?>" class="photo_img"
-                                     alt="photo">
+                            <div class="photo_slider-wrapp js-pop-up-img">
+                                <a href="<?php the_sub_field('photo-image'); ?>" class="photo_slider-link"> <img
+                                            src="<?php the_sub_field('photo-image'); ?>" class="photo_img"
+                                            alt="photo"></a>
+
                             </div>
                         </div>
                     <?php endwhile; ?>

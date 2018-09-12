@@ -1,15 +1,15 @@
-var PopUpModule = (function($) {
+var PopUpModule = (function ($) {
     // private methods
     var _removalDelay = 150;
     var _scrollBarWidth = detectModule.scrollBarWidth;
 
-    var isOpenPopup = function() {
+    var isOpenPopup = function () {
         // console.log("open pop-up");
         $('body').css('padding-right', _scrollBarWidth + "px");
         $("html").addClass("pop-up-is-showed");
     };
 
-    var isClosePopup = function() {
+    var isClosePopup = function () {
         // console.log("close pop-up");
         $("html").removeClass("pop-up-is-showed");
         $('body').css('padding-right', 0);
@@ -18,7 +18,7 @@ var PopUpModule = (function($) {
 
     return {
         // public methods
-        initInline: function(selector) {
+        initInline: function (selector) {
             $(selector).data("ignore-scroll", true);
             $(selector).magnificPopup({
                 type: 'inline',
@@ -33,8 +33,29 @@ var PopUpModule = (function($) {
                 }
             });
         },
+        initImg: function (selector) {
+            $(selector).data("ignore-scroll", true);
+            $(selector).magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                dots: true,
+                gallery: {
+                    enabled: true
+                },
 
-        initAjax: function(selector) {
+                preloader: false,
+                removalDelay: _removalDelay,
+                mainClass: 'mfp-fade',
+                overflowY: 'hidden',
+                showCloseBtn: true,
+                callbacks: {
+                    open: isOpenPopup,
+                    close: isClosePopup
+                }
+            });
+        },
+
+        initAjax: function (selector) {
             $(selector).data("ignore-scroll", true);
             var _this = this;
             $(selector).magnificPopup({
@@ -46,7 +67,7 @@ var PopUpModule = (function($) {
                 showCloseBtn: true,
                 callbacks: {
                     open: isOpenPopup,
-                    ajaxContentAdded: function() {
+                    ajaxContentAdded: function () {
                         // FormStyler.initSelect(".select");
                         // console.log(_this);
                         // _this.initAjax(".js-pop-up-ajax");
@@ -56,10 +77,10 @@ var PopUpModule = (function($) {
             });
         },
 
-        open: function(html) {
+        open: function (html) {
             $.magnificPopup.close();
             //wait for animation
-            setTimeout(function() {
+            setTimeout(function () {
                 // Open directly via API
                 $.magnificPopup.open({
                     items: {
@@ -71,7 +92,7 @@ var PopUpModule = (function($) {
                     overflowY: 'scroll',
                     showCloseBtn: false,
                     callbacks: {
-                        open: function() {
+                        open: function () {
                             isOpenPopup();
                             // FormStyler.initSelect(".select");
                             // ProductSlider.init(".js-product-slider", ".js-product-thumbs");
@@ -81,12 +102,12 @@ var PopUpModule = (function($) {
                 });
             }, _removalDelay);
         },
-        openAjax: function(href, setting) {
+        openAjax: function (href, setting) {
             var _this = this;
             $.ajax({
                 url: href,
                 type: 'GET',
-                success: function(data) {
+                success: function (data) {
                     //console.log(data);
                     _this.open(data);
                 }
@@ -96,16 +117,15 @@ var PopUpModule = (function($) {
     }
 }(jQuery));
 
-jQuery(function($) {
+jQuery(function ($) {
 
-    var wpcf7Elm = document.getElementById( 'wpcf7-f161-o2' );
+    var wpcf7Elm = document.getElementById('wpcf7-f161-o2');
     PopUpModule.initInline(".js-pop-up");
-
-    if(wpcf7Elm){
-        wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+    if (wpcf7Elm) {
+        wpcf7Elm.addEventListener('wpcf7mailsent', function (event) {
             $.magnificPopup.close();
             alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
-        }, false );
+        }, false);
     }
 
 }); // ready

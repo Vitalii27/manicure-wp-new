@@ -61,23 +61,27 @@ jQuery(function ($) {
         // infinite: true,
         arrows: true,
         dots: false,
+
         nextArrow: '<button type="button" class="slider_btn--next slider_btn"> ' + arrowRight + ' </button>',
         prevArrow: '<button type="button" class="slider_btn--prev slider_btn">' + arrowLeft + '</button>',
-        responsive: [  {
+        responsive: [{
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,
             }
-        },  {
+        }, {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
             }
-        }]
+        }],
+
         //accessibility: false // prevent page scroll up on autoplay
     };
 
-
+    jQuery('.js-photo-slider').on('init', function(event, slick, currentSlide, nextSlide){
+        PopUpModule.initImg(".js-pop-up-img");
+    });
     // init slider
     partnersSlider.slick(partnersOption);
     reviewSlider.slick(reviewOption);
