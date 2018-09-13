@@ -133,6 +133,22 @@ function manicure_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'manicure_scripts' );
 
+function wpcf7_modify_this( $WPCF7_ContactForm ) {
+    // Отправка данных в amoCRM
+    $roistatData = array(
+        'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
+        'key'     => 'c0395c3ee09effac3403737f6b57c1b5', // Замените SECRET_KEY на секретный ключ из пункта меню Настройки -> Интеграция со сделками в нижней части экрана и строчке Ключ для интеграций
+        'title'   => 'Новый лид с сайта', // Постоянное значение
+        'comment' => null, // Для поля с именем 'your-message'
+        'name'    => isset($_POST['form-name'])    ? $_POST['form-name'] : null, // Для поля с именем 'your-name'
+        'email'   => null, // Для поля с именем 'your-email'
+        'phone'   => isset($_POST['form-tel'])   ? $_POST['form-tel'] : null, // Для поля с именем 'your-email', // Если значения нет
+        'fields'  => array(),
+    );
+    file_get_contents("https://cloud.roistat.com/api/proxy/1.0/leads/add?" . http_build_query($roistatData));
+}
+add_action("wpcf7_before_send_mail", "wpcf7_modify_this");
+
 /**
  * Implement the Custom Header feature.
  */

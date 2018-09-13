@@ -41,14 +41,17 @@
                 </div>
                 <?php if (get_field('footer-menu-text')): ?>
                     <div class="footer_copy-text"><?php the_field('footer-menu-text') ?></div>
-                    <?php if (get_field('footer-menu-text')): ?>
-                        <a href="<?php the_field('link_web') ?>" target="_blank"
-                           class="footer_link-web"><?php the_field('link_web_text') ?></a>
-                    <?php endif; ?>
-                    <?php if (get_field('dates-link')): ?>
-                        <a href="<?php echo get_template_directory_uri() ?>/assets/pdf/dates.pdf" target="_blank"
-                           class="footer_link-web"><?php the_field('dates-link') ?></a>
-                    <?php endif; ?>
+                    <div class="footer_links">
+                        <?php if (get_field('footer-menu-text')): ?>
+                            <a href="<?php the_field('link_web') ?>" target="_blank"
+                               class="footer_link-web"><?php the_field('link_web_text') ?></a>
+                        <?php endif; ?>
+                        <?php if (get_field('dates-link')): ?>
+                            <a href="<?php echo get_template_directory_uri() ?>/assets/pdf/dates.pdf" target="_blank"
+                               class="footer_link-web"><?php the_field('dates-link') ?></a>
+                        <?php endif; ?>
+                    </div>
+
                 <?php endif; ?>
             </div>
             <?php if (have_rows('footer-list')): ?>
@@ -68,6 +71,32 @@
 </footer>
 
 <?php wp_footer(); ?>
+<script>
+    function getCookie(name) {
+        var cookie = " " + document.cookie;
+        var search = " " + name + "=";
+        var setStr = null;
+        var offset = 0;
+        var end = 0;
+        if (cookie.length > 0) {
+            offset = cookie.indexOf(search);
+            if (offset != -1) {
+                offset += search.length;
+                end = cookie.indexOf(";", offset)
+                if (end == -1) {
+                    end = cookie.length;
+                }
+                setStr = unescape(cookie.substring(offset, end)); //После отправки заявки из формы
+            }
+        }
+        return(setStr);
+    }
 
+    (function(d){
+        setTimeout(function(){
+            document.getElementsByName('roistat-promo-code')[0].value = getCookie('roistat_visit');
+        }, 1000);
+    })(document);
+</script>
 </body>
 </html>

@@ -53,6 +53,8 @@
   &_link-web{
     font-size: 13px;
     color: $orange;
+    display: block;
+    line-height: 1.4;
     &:hover{
       text-decoration: underline;
     }

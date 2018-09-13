@@ -52,6 +52,9 @@
                 </div>
                 <div class="header_phone">
                     <div class="header_number-wrapp">
+                        <?php if (get_field('header_top-text')): ?>
+                            <div class="header_top-text"><?php the_field('header_top-text') ?></div>
+                        <?php endif; ?>
                         <?php if (get_field('header_tel')): ?>
                             <div class="header_number"><?php the_field('header_tel') ?></div>
                         <?php endif; ?>
