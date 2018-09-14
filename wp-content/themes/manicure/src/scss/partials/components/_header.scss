@@ -1,5 +1,7 @@
 /* header */
-
+.header_top-text{
+  color: #ff0000 !important;
+}
 .header {
   display: inline-block;
   width: 100%;
@@ -18,8 +20,6 @@
 
   }
 
-
-
   &_img {
 
     height: 7rem;
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    p{
+    p {
       margin-left: 1rem;
       font-size: 1.5rem;
     }
@@ -38,10 +38,10 @@
     display: flex;
     align-items: center;
   }
-  &_top-text{
+  &_top-text {
     line-height: 1.3;
     font-size: 1.6rem;
-    color: #ff0000;
+    color: #ff0000 !important;
     font-weight: 600;
   }
   &_number-wrapp {
@@ -64,13 +64,15 @@
   }
 
 }
-.is-fixed{
-  .swipe-menu__list>li a:before{
+
+.is-fixed {
+  .swipe-menu__list > li a:before {
     bottom: 0;
   }
   padding: 0;
 
 }
+
 @media only screen and (max-width: $screen-sm-max) {
   .header {
     &_phone {
@@ -96,11 +98,13 @@
         font-size: 1.4rem;
       }
     }
+    &_top-text {
+      font-size: 1.4rem;
+    }
     &_link {
-      p{
+      p {
         display: none;
       }
-
 
     }
 
@@ -108,17 +112,17 @@
 }
 
 @media only screen and (max-width: $screen-xxs) {
-  .header{
-    .is-fixed{
+  .header {
+    .is-fixed {
 
       padding: .8rem 0 .8rem 0;
 
     }
-    &_btn-link{
+    &_btn-link {
       padding: .3rem 1.2rem;
       font-size: 1.2rem;
     }
-    &_phone{
+    &_phone {
       padding-right: 3rem;
     }
     &_number-wrapp {
@@ -128,7 +132,9 @@
         font-size: 1.2rem;
       }
     }
-
+    &_top-text {
+      font-size: 1.2rem;
+    }
     &_img {
 
       height: 5rem;
@@ -137,14 +143,13 @@
   }
 }
 
-
 @media only screen and (max-width: 321px) {
-  .header{
-    &_btn-link{
+  .header {
+    &_btn-link {
       padding: .2rem 1rem;
       font-size: 1.2rem;
     }
-    &_phone{
+    &_phone {
       padding-right: 2.5rem;
     }
     &_number {
@@ -154,7 +159,9 @@
         font-size: 1.1rem;
       }
     }
-
+    &_top-text {
+      font-size: 1.1rem;
+    }
     &_img {
 
       height: 4rem;
@@ -162,6 +169,7 @@
     }
   }
 }
+
 // @media only screen and (max-width: $screen-sm-max) {
 // }
 
