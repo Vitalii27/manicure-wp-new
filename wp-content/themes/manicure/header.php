@@ -23,11 +23,16 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
+    <script src="https://3dsec.sberbank.ru/demopayment/docsite/assets/js/ipay.js"></script>
 
     <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
+<script>
+    var ipay = new IPAY({api_token: 'q71m44c8fgmsm082laf5o3j56k'});
+</script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T64SQT5"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -48,7 +53,13 @@
                 </div>
                 <?php get_template_part('./template-parts/blocks/swipe-menu'); ?>   <?php get_template_part('./template-parts/blocks/menu-btn'); ?>
                 <div class="header_btn">
-                    <a href="#" class="header_btn-link btn">Оплатить<br>онлайн</a>
+                    <a  onclick="ipayCheckout({
+    amount:  <?php the_field('header-btn-price') ?>,
+    currency:'RUB',
+    order_number:'',
+    description:  '<?php the_field('header-btn-name') ?>'},
+    function(order) { showSuccessfulPurchase(order) },
+    function(order) { showFailurefulPurchase(order) })" href="#" class="header_btn-link btn">Оплатить<br>онлайн</a>
                 </div>
                 <div class="header_phone">
                     <div class="header_number-wrapp">

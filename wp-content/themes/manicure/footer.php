@@ -98,5 +98,17 @@
         }, 1000);
     })(document);
 </script>
+<script type="text/javascript">
+
+
+    function showSuccessfulPurchase(order) {
+
+    }
+
+    function showFailurefulPurchase(order) {
+
+    }
+
+</script>
 </body>
 </html>
