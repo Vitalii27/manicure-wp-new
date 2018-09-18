@@ -43,5 +43,8 @@
                 </div>
             <?php endif; ?>
         </div>
+        <div class="action_form">
+            <?php echo do_shortcode(get_field('action-form')) ?>
+        </div>
     </div>
 </section>
