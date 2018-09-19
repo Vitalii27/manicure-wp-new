@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="program_content">
             <?php if (get_field('program-title')): ?>
-                <div class="program_title"><?php the_field('program-title') ?></div>
+                <h3 class="program_title"><?php the_field('program-title') ?></h3>
             <?php endif; ?>
             <?php if (get_field('program-subtitle')): ?>
                 <div class="program_subtitle"><?php the_field('program-subtitle') ?></div>
@@ -60,6 +60,9 @@
                         <?php the_field('program-bottom-desc') ?>
                     </div>
                 <?php endif; ?>
+            </div>
+            <div class="action_form">
+                <?php echo do_shortcode(get_field('action-form')) ?>
             </div>
         </div>
     </div>

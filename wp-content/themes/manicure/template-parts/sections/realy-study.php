@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="program_content">
             <?php if (get_field('realy-title')): ?>
-                <div class="title"><?php the_field('realy-title') ?></div>
+                <h3 class="title"><?php the_field('realy-title') ?></h3>
             <?php endif; ?>
             <?php if (have_rows('realy-list')): ?>
                 <ul class="program_list">
@@ -24,6 +24,9 @@
                     <?php endwhile; ?>
                 </ul>
             <?php endif; ?>
+        </div>
+        <div class="action_form">
+            <?php echo do_shortcode(get_field('action-form')) ?>
         </div>
     </div>
 </section>

@@ -3,9 +3,9 @@
         <div class="diplom_content">
             <div class="diplom_left">
                 <?php if (get_field('diplom-title')): ?>
-                    <div class="diplom_title">
+                    <h3 class="diplom_title">
                         <?php the_field('diplom-title') ?>
-                    </div>
+                    </h3>
                 <?php endif; ?>
                 <?php if (have_rows('diplom-list')): ?>
                     <ul class="diplom_list">

@@ -16,7 +16,7 @@
     color: #656565;
     font-weight: 300;
     border: 1px solid #d4d4d4;
-    background-color: transparent;
+
 
     width: 100%;
     @include placeholder {
@@ -28,6 +28,7 @@
   }
   &_btn{
     @extend .btn;
+    background-color: #f03866;
     padding-top: 1.9rem;
     padding-bottom: 1.9rem;
     padding-left: 5.11rem;

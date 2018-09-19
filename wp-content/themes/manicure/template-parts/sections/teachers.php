@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="program_content">
             <?php if (get_field('teacher-title')): ?>
-                <div class="title"><?php the_field('teacher-title') ?></div>
+                <h3 class="title"><?php the_field('teacher-title') ?></h3>
             <?php endif; ?>
             <?php if (have_rows('teacher-list')): ?>
                 <ul class="program_list">

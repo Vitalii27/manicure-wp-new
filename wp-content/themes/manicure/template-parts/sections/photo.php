@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="photo_content">
             <?php if (get_field('photo-title')): ?>
-                <div class="title"><?php the_field('photo-title') ?></div>
+                <h3 class="title"><?php the_field('photo-title') ?></h3>
             <?php endif; ?>
             <?php if (have_rows('photo-list')): ?>
                 <div class="photo_slider js-photo-slider">

@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="advantages_content">
             <?php if (get_field('advantages-title')): ?>
-                <div class="title"><?php the_field('advantages-title') ?></div>
+                <h3 class="title"><?php the_field('advantages-title') ?></h3>
             <?php endif; ?>
             <?php if (have_rows('advantages-list')): ?>
                 <ul class="advantages_list">

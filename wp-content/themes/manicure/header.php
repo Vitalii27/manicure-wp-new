@@ -22,6 +22,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="yandex-verification" content="b59cc5f407bab4a7" />
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="https://3dsec.sberbank.ru/demopayment/docsite/assets/js/ipay.js"></script>
 

@@ -27,7 +27,7 @@
       font-weight: 400;
       span{
         font-weight: 700;
-        color: $orange;
+        color: #ff0000;
       }
     }
     &-time{
@@ -37,6 +37,9 @@
   }
   &_form{
     margin-top: 7rem;
+    input{
+      border-color: #f03866 !important;
+    }
   }
   &_bottom-text{
     font-size: 1.5rem;
