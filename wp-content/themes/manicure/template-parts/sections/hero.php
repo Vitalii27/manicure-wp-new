@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="hero_content">
             <?php if (get_field('hero_title')): ?>
-                <h1 class="hero_title"><?php the_field('hero_title') ?></h1>
+                <div class="hero_title"><?php the_field('hero_title') ?></div>
             <?php endif; ?>
             <?php if (get_field('hero_subtitle')): ?>
                 <div class="hero_subtitle"><?php the_field('hero_subtitle') ?></div>

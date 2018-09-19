@@ -154,11 +154,13 @@ function wpcf7_modify_this( $WPCF7_ContactForm ) {
     // Отправка данных в amoCRM
     $roistatData = array(
         'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
+
         'key'     => 'OTMxNDc6NjkxNzU6MzI4ZjU0MGE5OTk0MTU1NWMxZWQxYzA1YzMzZDcwYWI=', // Замените SECRET_KEY на секретный ключ из пункта меню Настройки -> Интеграция со сделками в нижней части экрана и строчке Ключ для интеграций
         'title'   => 'Заявка с сайта shkola-manikyura.com', // Постоянное значение
         'comment' => $comment,
         'name'    => $name,
         'email'   => $email,
+
         'phone'   => isset($_POST['form-tel'])   ? $_POST['form-tel'] : null, // Для поля с именем 'your-email', // Если значения нет
         'fields'  => array(
             "190389"=>isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
