@@ -1,7 +1,8 @@
 /* header */
-.header_top-text{
+.header_top-text {
   color: #ff0000 !important;
 }
+
 .header {
   display: inline-block;
   width: 100%;
@@ -117,6 +118,9 @@
 
       padding: .8rem 0 .8rem 0;
 
+    }
+    &_btn {
+      display: none;
     }
     &_btn-link {
       padding: .3rem 1.2rem;

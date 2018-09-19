@@ -8,7 +8,10 @@
             <?php endif; ?>
             <?php if (get_field('action-desc')): ?>
                 <div class="action_content-period">
-                    <?php the_field('action-desc') ?>
+                   <?php the_field('action-desc') ?>
+                    <?php the_field('action-desc-name') ?>
+                    <p>всего за — <span style="color: #ff0000"><?php the_field('action-desc-price') ?> ₽</span>, вместо — <span style="color: #ec9e14"><?php the_field('action-last-desc') ?> ₽</span></p>
+
                 </div>
             <?php endif; ?>
             <?php if (get_field('action-year')): ?>

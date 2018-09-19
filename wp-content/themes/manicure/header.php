@@ -55,7 +55,7 @@
                 <?php get_template_part('./template-parts/blocks/swipe-menu'); ?>   <?php get_template_part('./template-parts/blocks/menu-btn'); ?>
                 <div class="header_btn">
                     <a  onclick="ipayCheckout({
-    amount:  <?php the_field('header-btn-price') ?>,
+    amount:  <?php the_field('action-desc-price') ?>,
     currency:'RUB',
     order_number:'',
     description:  '<?php the_field('header-btn-name') ?>'},
