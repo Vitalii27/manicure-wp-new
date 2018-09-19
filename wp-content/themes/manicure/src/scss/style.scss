@@ -13,9 +13,9 @@
 /* VENDOR */
 
 @import "partials/vendor/normalize";
-@import "partials/vendor/clearfix";
-@import "partials/vendor/bootstrap-grid/bootstrap-grid";
-@import "partials/vendor/bootstrap-grid/responsive-utilities";
+//@import "partials/vendor/clearfix";
+//@import "partials/vendor/bootstrap-grid/bootstrap-grid";
+//@import "partials/vendor/bootstrap-grid/responsive-utilities";
 
 /* VENDOR END */
 
@@ -80,6 +80,7 @@
 @import "partials/components/blocks/contacts";
 @import "partials/components/blocks/grafic";
 @import "partials/components/blocks/404";
+@import "partials/components/blocks/text";
 
 
 

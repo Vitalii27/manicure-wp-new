@@ -29,6 +29,7 @@ get_header(); ?>
 <?php get_template_part( './template-parts/sections/numbers' ); ?>
 <?php get_template_part( './template-parts/sections/reviews' ); ?>
 <?php get_template_part( './template-parts/sections/photo' ); ?>
+<?php get_template_part( './template-parts/sections/text' ); ?>
 <?php get_template_part( './template-parts/sections/contacts' ); ?>
 
 

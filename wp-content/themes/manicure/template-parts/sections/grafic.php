@@ -5,9 +5,9 @@
     <div class="schedule-bg-grad"></div>
     <div class="container-fluid">
         <?php if (get_field('schedule_title')): ?>
-            <div class="title">
+            <h3 class="title">
                 <?php the_field('schedule_title') ?>
-            </div>
+            </h3>
         <?php endif; ?>
         <?php if (have_rows('schedule_list')): ?>
             <ul class="schedule_list">

@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="reviews_content">
             <?php if (get_field('review-title')): ?>
-                <div class="title"><?php the_field('review-title'); ?></div>
+                <h3 class="title"><?php the_field('review-title'); ?></h3>
             <?php endif; ?>
             <?php if (have_rows('review-list')): ?>
                 <div class="reviews_slider js-review-slider">

@@ -7,7 +7,7 @@
             <div id="map" class="contacts_map map"></div>
             <div class="contacts_text">
                 <?php if (get_field('contacts-title')): ?>
-                    <div class="title"><?php the_field('contacts-title') ?></div>
+                    <h3 class="title"><?php the_field('contacts-title') ?></h3>
                 <?php endif; ?>
                 <?php if (get_field('contacts-desc')): ?>
                     <div class="contacts_desc">

@@ -5,16 +5,17 @@
     <div class="container-fluid">
         <div class="about-school_content">
             <?php if (get_field('about-us-title')): ?>
-                <div class="title"><?php the_field('aabout-us-title') ?></div>
+                <h3 class="title"><?php the_field('aabout-us-title') ?></h3>
             <?php endif; ?>
             <div class="about-school_video-block">
-                <?php if (get_field('about-video')): ?>
+                <?php if (get_field('about-video_link')): ?>
                     <div class="about-school_video">
-                        <video poster="<?php the_field('about-img-video') ?>" id="video-about-school" muted playsinline
-                               preload="auto" loop="loop" controls="controls">
-                            <source type="video/mp4" src="<?php the_field('about-video') ?>">
-                            <source type="video/webm" src="<?php the_field('about-video') ?>">
-                        </video>
+<!--                        <video poster="--><?php //the_field('about-img-video') ?><!--" id="video-about-school" muted playsinline-->
+<!--                               preload="auto" loop="loop" controls="controls">-->
+<!--                            <source type="video/mp4" src="--><?php //the_field('about-video') ?><!--">-->
+<!--                            <source type="video/webm" src="--><?php //the_field('about-video') ?><!--">-->
+<!--                        </video>-->
+                        <iframe width="560" height="315" src="<?php the_field('about-video_link') ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 <?php endif; ?>
                 <div class="about-school_desc">
