@@ -3,9 +3,45 @@
   padding-bottom: 8rem;
   line-height: 1.4;
 }
+.text_content{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  h1{
+    font-size: 3.8rem;
+    padding-bottom: 2.2rem;
+  }
+  h2{
+    font-size: 2.6rem;
+  }
+  h3{
+    font-size: 2.2rem;
+  }
+  li{
+    list-style: disc;
+
+  }
+  ul{
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+  }
+}
 @media only screen and (max-width: $screen-xs-max) {
   .text {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+  .text_content{
+
+    h1{
+      font-size: 3rem;
+      padding-bottom: 1.8rem;
+    }
+    h2{
+      font-size: 2.2rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+
   }
 }
