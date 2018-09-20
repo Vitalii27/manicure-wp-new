@@ -12,7 +12,7 @@ jQuery(function($) {
         $wrapper.addClass(activeClass);
         // ios scroll fix
         $("html, body").css({
-            height: "100%",
+            // height: "100%",
             "overflow-y": "hidden"
         });
 
