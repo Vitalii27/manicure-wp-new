@@ -40,7 +40,7 @@
 
 <body <?php body_class(); ?>>
 <script>
-    var ipay = new IPAY({api_token: 'q71m44c8fgmsm082laf5o3j56k'});
+    var ipay = new IPAY({api_token: 'rq2cca8actj8ecqd5uvbi767ij'});
 </script>
 <!-- Google Tag Manager (noscript) -->
 <noscript>

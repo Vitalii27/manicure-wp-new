@@ -53,10 +53,20 @@
     a {
       display: inline-block;
       font-size: 1.6rem;
-      padding: 0 0 .3rem;
-      color: #2d800d;
-      border-bottom: 1px dashed #2d800d;
+      padding: .5rem 1rem .5rem;
+      color: #fff;
+      //border-bottom: 1px dashed #2d800d;
       font-weight: 600;
+      background-color: #2d800d;
+      border-radius: 13px;
+      margin-top: 3.5px;
+      border: 1px solid transparent;
+      transition: all .25s;
+      &:hover {
+        background-color: transparent;
+        color: #2d800d;
+        border-color: #2d800d;
+      }
     }
   }
   &_icon {
