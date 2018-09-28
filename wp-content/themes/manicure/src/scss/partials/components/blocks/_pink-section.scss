@@ -1,0 +1,115 @@
+.section-pink {
+  padding-top: 8.5rem;
+  padding-bottom: 34rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  &_subtitle {
+    @extend .program_subtitle;
+    color: $orange;
+  }
+  &_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 18rem;
+    position: relative;
+    z-index: 5;
+  }
+  &_wrapp {
+    text-align: center;
+    position: relative;
+  }
+  &_item {
+    margin-right: 7rem;
+    text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--top {
+      margin-top: -11rem;
+    }
+    &-icon {
+      position: relative;
+      width: 12.4rem;
+      height: 12.1rem;
+      margin: 0 auto;
+      img {
+        max-width: none;
+      }
+      span {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        color: #fc71a0;
+        font-size: 4.2rem;
+      }
+    }
+    &-text {
+      margin-top: 2rem;
+      h4 {
+        font-size: 1.8rem;
+        color: #1e1e1e;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.4;
+        margin-top: .7rem;
+        display: inline-block;
+      }
+    }
+
+  }
+  &_center-img {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &_left-img {
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }
+  .small-text-pink {
+    position: static;
+    font-size: 1.6rem;
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+  .section-pink {
+    &_item {
+      margin-right: 9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .section-pink {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &_list {
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+    &_item {
+      max-width: 24rem;
+      margin: 2rem auto 0;
+      &:last-child{
+        margin-right: auto;
+      }
+      &-top {
+        margin-top: 2rem;
+      }
+      &-icon{
+        margin: 0 auto;
+      }
+
+    }
+  }
+}

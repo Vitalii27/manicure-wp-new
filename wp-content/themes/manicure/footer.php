@@ -117,5 +117,20 @@
     }
 
 </script>
+<script>
+    window.onRoistatAllModulesLoaded = function() {
+        window.roistat.leadHunter.onAfterSubmit = function(leadData) {
+            yaCounter50295990.reachGoal('LEAD_HUNTER'); //XXXXXX — номер вашего счетчика Яндекс.Метрики; TARGET_NAME — идентификатор цели.
+        }
+    };
+</script>
+
+<script>
+    window.onRoistatAllModulesLoaded = function() {
+        window.roistat.leadHunter.onAfterSubmit = function(leadData) {
+            ga('roistat-form','click-roistat');
+        }
+    };
+</script>
 </body>
 </html>

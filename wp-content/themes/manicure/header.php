@@ -32,13 +32,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="yandex-verification" content="b59cc5f407bab4a7"/>
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <script src="https://3dsec.sberbank.ru/demopayment/docsite/assets/js/ipay.js"></script>
+    <script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
 
     <?php wp_head(); ?>
-
+    <script src="//st.yagla.ru/js/y.c.js?h=ee7f27a2337c939835e600bed3d1cfe3"></script>
 </head>
 
 <body <?php body_class(); ?>>
+
 <script>
     var ipay = new IPAY({api_token: 'rq2cca8actj8ecqd5uvbi767ij'});
 </script>
@@ -48,6 +49,17 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
+</noscript>
+<div class="header_btn-mobile-pay">
+    <a onclick="ipayCheckout({
+            amount:  <?php the_field('header-btn-price') ?>,
+            currency:'RUB',
+            order_number:'',
+            description:  '<?php the_field('header-btn-name') ?>'},
+            function(order) { showSuccessfulPurchase(order) },
+            function(order) { showFailurefulPurchase(order) })" href="#" class="header_btn-link btn"><img src="<?php the_field('header-btn-mobile') ?>"
+                                                                                                          alt="img"></a>
+</div>
 <div><a class="arrow-to-up" href="#hero"><i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
 <header class="header js-header" id="header">
     <div class="container-fluid">

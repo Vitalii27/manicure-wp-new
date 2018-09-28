@@ -1,0 +1,131 @@
+.super-action {
+  background-image: linear-gradient(to bottom, #fff, #f8f8f8);
+  padding-bottom: 8rem;
+  .section-pink_subtitle {
+    margin-top: .5rem;
+    color: #1e1e1e;
+  }
+  &_content {
+    margin-top: 4.2rem;
+  }
+  &_red {
+    background-color: #d53636;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    h3 {
+      font-weight: 600;
+      color: $white;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+
+    }
+  }
+  .title {
+    color: #d53636;
+    font-weight: 700;
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  &_item {
+    flex-basis: 31.3333%;
+    width: 31.3333%;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    //position: relative;
+    margin-top: 4.5rem;
+    position: relative;
+    padding-bottom: 10rem;
+
+  }
+  &_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 24rem;
+  }
+  &_prices {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    padding-left: 2rem;
+  }
+  &_old-price {
+    color: #dcdcdc;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-decoration: line-through;
+  }
+  &_new-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $orange;
+    margin-top: .5rem;
+  }
+  &_text {
+    margin-top: 2.2rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #1e1e1e;
+    padding-left: 2rem;
+  }
+  &_bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .program_btn {
+    left: 2rem;
+    transform: translateX(0);
+    z-index: 3;
+    .btn {
+      padding: 1.3rem 5.5rem;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+  .super-action {
+    &_item {
+      flex-basis: 41%;
+      width: 41%;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .super-action {
+    padding-bottom: 4rem;
+    &_item {
+      flex-basis: 85%;
+      width: 85%;
+    }
+    &_red {
+
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      h3 {
+
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+    }
+    &_text{
+      text-align: center;
+    }
+    .program_btn{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

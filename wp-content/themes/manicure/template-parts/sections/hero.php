@@ -9,8 +9,14 @@
             <?php if (get_field('hero_title')): ?>
                 <div class="hero_title"><?php the_field('hero_title') ?></div>
             <?php endif; ?>
+
             <?php if (get_field('hero_subtitle')): ?>
                 <div class="hero_subtitle"><?php the_field('hero_subtitle') ?></div>
+            <?php endif; ?>
+            <?php if (get_field('sing-up-button-hero')): ?>
+                <div class="sub-section_btn-block">
+                    <a href="#sing-up" class="sub-section_link btn js-pop-up"><?php the_field('sing-up-button-hero') ?></a>
+                </div>
             <?php endif; ?>
             <?php if (have_rows('icon-hero-reap')): ?>
                 <ul class="hero_list">

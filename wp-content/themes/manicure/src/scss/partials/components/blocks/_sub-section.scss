@@ -5,6 +5,7 @@
     //filter: blur(5px);
     padding-top: 8rem;
     padding-bottom: 8rem;
+    z-index: 2;
     &:before {
         content: '';
         position: absolute;
