@@ -15,7 +15,7 @@
                 <h3 class="title"><?php the_field('section-pink-title') ?> </h3>
             <?php endif; ?>
             <?php if (get_field('section-pink-subtitle')): ?>
-                <div class="section-pink_subtitle"><?php the_field('section-pink-subtitle') ?></div>
+                <div class="section-pink_subtitle section-pink_subtitle--pink"><?php the_field('section-pink-subtitle') ?></div>
             <?php endif; ?>
         </div>
         <?php if (have_rows('super-action-list')): $count = 0; ?>
@@ -25,6 +25,7 @@
                         <?php if (get_sub_field('super-action-bg')): ?>
                             <div class="super-action_img"
                                  style="background-image: url(<?php the_sub_field('super-action-bg'); ?>)">
+                                <div class="super-action_name-image"><?php the_sub_field('super-action-bg-name'); ?></div>
                                 <?php if (get_sub_field('super-action_new-price')): ?>
                                     <div class="super-action_prices">
                                         <div class="super-action_old-price"><?php the_sub_field('super-action_old-price'); ?></div>

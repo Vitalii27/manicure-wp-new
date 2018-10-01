@@ -13,9 +13,13 @@
             <?php if (get_field('hero_subtitle')): ?>
                 <div class="hero_subtitle"><?php the_field('hero_subtitle') ?></div>
             <?php endif; ?>
+            <?php if (get_field('hero_subtitle3')): ?>
+                <div class="hero_subtitle"><?php the_field('hero_subtitle3') ?></div>
+            <?php endif; ?>
             <?php if (get_field('sing-up-button-hero')): ?>
                 <div class="sub-section_btn-block">
-                    <a href="#sing-up" class="sub-section_link btn js-pop-up"><?php the_field('sing-up-button-hero') ?></a>
+                    <a href="#sing-up"
+                       class="sub-section_link btn js-pop-up"><?php the_field('sing-up-button-hero') ?></a>
                 </div>
             <?php endif; ?>
             <?php if (have_rows('icon-hero-reap')): ?>

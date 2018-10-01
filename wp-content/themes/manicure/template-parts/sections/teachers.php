@@ -11,7 +11,11 @@
                         <li class="program_item">
                             <?php if (get_sub_field('teacher-bg')): ?>
                                 <div class="program_img"
-                                     style="background-image: url(<?php the_sub_field('teacher-bg'); ?>)"></div>
+                                     style="background-image: url(<?php the_sub_field('teacher-bg'); ?>)">
+                                    <div class="program_img-name"><?php the_sub_field('teacher_img-name'); ?></div>
+
+                                </div>
+
                             <?php endif; ?>
                             <?php if (get_sub_field('teacher-name')): ?>
                                 <div class="program_text">

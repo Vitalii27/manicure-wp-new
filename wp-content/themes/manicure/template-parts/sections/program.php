@@ -14,6 +14,9 @@
                             <li class="program_item">
                                 <div class="program_img"
                                      style="background-image: url(<?php the_sub_field('program-item-bg'); ?>)">
+                                    <div class="program_img-name">
+                                        <?php the_sub_field('program-img-name'); ?>
+                                    </div>
                                     <?php if (get_sub_field('program-time')): ?>
                                         <div class="program_time"><?php the_sub_field('program-time'); ?></div>
                                     <?php endif; ?>

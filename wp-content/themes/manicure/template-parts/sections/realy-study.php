@@ -12,8 +12,10 @@
                             <?php if (get_sub_field('realy-bg')): ?>
                             <div class="program_img"
                                  style="background-image: url(<?php the_sub_field('realy-bg'); ?>)">
-                                <?php endif; ?>
+                                <div class="program_img-name"><?php the_sub_field('program_img-name'); ?></div>
+
                             </div>
+                            <?php endif; ?>
                             <?php if (get_sub_field('realy-list-title')): ?>
                                 <div class="program_text">
                                     <div class="program_text-bold"><?php the_sub_field('realy-list-title'); ?></div>

@@ -12,7 +12,11 @@
                             <div class="photo_slider-wrapp js-pop-up-img">
                                 <a href="<?php the_sub_field('photo-image'); ?>" class="photo_slider-link"> <img
                                             src="<?php the_sub_field('photo-image'); ?>" class="photo_img"
-                                            alt="photo"></a>
+                                            alt="photo">
+                                    <?php if (get_sub_field('photo_img-name')): ?>
+                                        <span class="photo_img-name"><?php the_sub_field('photo_img-name'); ?></span>
+                                    <?php endif; ?>
+                                </a>
 
                             </div>
                         </div>

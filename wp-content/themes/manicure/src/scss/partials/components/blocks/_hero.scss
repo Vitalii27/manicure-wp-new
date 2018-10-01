@@ -8,10 +8,10 @@
   overflow: hidden;
   &_img {
     position: absolute;
-    bottom: -1rem;
+    top: 8.2rem;
     right: 0;
     img {
-      max-width: none;
+      max-width: 73rem;
     }
   }
   &_content {
@@ -27,7 +27,7 @@
   &_subtitle {
     font-weight: 600;
     font-size: 3.6rem;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
   &_list {
     display: flex;
@@ -43,8 +43,20 @@
       line-height: 1.4;
     }
   }
-  .sub-section_btn-block{
+  .sub-section_btn-block {
     text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .hero {
+
+    &_img {
+
+      img {
+        max-width: 60rem;
+      }
+    }
   }
 }
 
@@ -62,6 +74,25 @@
     }
     &_item {
       margin-right: 7rem;
+    }
+
+    &_img {
+
+      img {
+        max-width: 60rem;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero {
+    &_img {
+
+      img {
+        max-width: 50rem;
+      }
     }
   }
 }
@@ -107,11 +138,11 @@
     &_item {
       margin-top: 2rem;
       margin-right: 0;
-      P{
+      P {
         margin-top: 1rem;
       }
     }
-    .sub-section_btn-block{
+    .sub-section_btn-block {
       text-align: center;
     }
   }
