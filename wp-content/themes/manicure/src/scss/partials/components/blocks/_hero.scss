@@ -15,10 +15,12 @@
     }
   }
   &_content {
-    padding-top: 12rem;
+    padding-top: 7.5rem;
     padding-bottom: 12.5rem;
     position: relative;
     z-index: 3;
+    max-width: 93rem;
+    line-height: 1.4;
   }
   &_title {
     font-size: 4.8rem;
@@ -28,6 +30,7 @@
     font-weight: 600;
     font-size: 3.6rem;
     margin-top: 2.5rem;
+    line-height: 1.4;
   }
   &_list {
     display: flex;

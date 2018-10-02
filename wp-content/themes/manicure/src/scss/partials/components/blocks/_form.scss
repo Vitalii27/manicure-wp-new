@@ -34,7 +34,9 @@
     padding-left: 5.11rem;
     padding-right: 5.11rem;
     text-transform: uppercase;
+    margin-top: 3rem;
   }
+
 }
 
 @media only screen and (max-width: $screen-xs-max) {
@@ -53,6 +55,9 @@
     &_input{
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
+    }
+    &_btn{
+      margin-top: 1.5rem;
     }
   }
 }

@@ -8,9 +8,9 @@
             <?php endif; ?>
             <?php if (get_field('action-desc')): ?>
                 <div class="action_content-period">
-                   <?php the_field('action-desc') ?>
+                    <?php the_field('action-desc') ?>
                     <?php the_field('action-desc-name') ?>
-                    <p>всего за — <span style="color: #ff0000"><?php the_field('action-desc-price') ?> ₽</span>, вместо — <span style="color: #ec9e14"><?php the_field('action-last-desc') ?> ₽</span></p>
+
 
                 </div>
             <?php endif; ?>
@@ -23,15 +23,16 @@
         </div>
     </div>
     <?php if (get_field('action-form')): ?>
-    <div class="action_form">
-        <?php echo do_shortcode(get_field('action-form')) ?>
-    </div>
+        <div class="action_form">
+            <?php echo do_shortcode(get_field('action-form')) ?>
+        </div>
     <?php endif; ?>
     <?php if (get_field('action-bottom-text')): ?>
         <div class="action_bottom-text">
             <p> <?php the_field('action-bottom-text') ?>
                 <?php if (get_field('action-bottom-text-link')): ?>
-                    <a href="<?php echo get_template_directory_uri() ?>/assets/pdf/privacy-policy.pdf" target="_blank"><?php the_field('action-bottom-text-link') ?></a>
+                    <a href="<?php echo get_template_directory_uri() ?>/assets/pdf/privacy-policy.pdf"
+                       target="_blank"><?php the_field('action-bottom-text-link') ?></a>
                 <?php endif; ?>
             </p>
         </div>
@@ -42,6 +43,7 @@
         <img src="<?php the_field('action-img') ?>" alt="img" class="action_bg">
     <?php endif; ?>
 </section>
+
 <script>
     <?php if (get_field('action-year')): ?>
     var yearData = <?php the_field('action-year') ?>;
