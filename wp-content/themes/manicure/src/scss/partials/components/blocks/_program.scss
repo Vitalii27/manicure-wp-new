@@ -9,7 +9,7 @@
     &_subtitle {
         text-align: center;
         font-size: 3rem;
-        font-weight: 600;
+        font-weight: 900;
         color: #f03866;
         margin-top: 3rem;
     }
@@ -88,6 +88,7 @@
         font-weight: 600;
         font-size: 3rem;
         z-index: 3;
+        text-shadow: 3px 3px 5px black, 10px 9px 1em black;
     }
     &_bottom {
         text-align: center;
