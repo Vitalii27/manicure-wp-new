@@ -120,6 +120,7 @@ var PopUpModule = (function ($) {
 jQuery(function ($) {
 
     var wpcf7Elm = document.getElementById('wpcf7-f161-o2');
+    var wpcf7Elm3 = document.getElementById('wpcf7-f161-o5');
     var wpcf7Elm2 = document.getElementById('wpcf7-f10-o1');
 
     PopUpModule.initInline(".js-pop-up");
@@ -127,6 +128,14 @@ jQuery(function ($) {
         wpcf7Elm.addEventListener('wpcf7mailsent', function (event) {
             $.magnificPopup.close();
             alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
+
+        }, false);
+    }
+    if (wpcf7Elm3) {
+        wpcf7Elm3.addEventListener('wpcf7mailsent', function (event) {
+            $.magnificPopup.close();
+            alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
+
         }, false);
     }
     if (wpcf7Elm2) {

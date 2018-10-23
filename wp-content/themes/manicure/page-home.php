@@ -12,6 +12,7 @@
 get_header(); ?>
 
 <?php get_template_part( './template-parts/sections/hero' ); ?>
+
 <?php get_template_part( './template-parts/sections/sub-section' ); ?>
 <?php //get_template_part( './template-parts/sections/section-pink' ); ?>
 
@@ -22,6 +23,7 @@ get_header(); ?>
 
 <?php get_template_part( './template-parts/sections/program' ); ?>
 <?php //get_template_part( './template-parts/sections/super' ); ?>
+<?php get_template_part( './template-parts/sections/faq' ); ?>
 <?php get_template_part( './template-parts/sections/diplom' ); ?>
 <?php get_template_part( './template-parts/sections/sing-up' ); ?>
 
@@ -36,6 +38,7 @@ get_header(); ?>
 <?php get_template_part( './template-parts/sections/info' ); ?>
 
 <?php get_template_part( './template-parts/sections/photo' ); ?>
+<?php //get_template_part( './template-parts/sections/photo2' ); ?>
 <?php get_template_part( './template-parts/sections/grafic' ); ?>
 
 <?php get_template_part( './template-parts/sections/text' ); ?>
