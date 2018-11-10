@@ -38,6 +38,9 @@
   }
   &_item {
     margin-right: 10rem;
+    img{
+      max-height: 8rem;
+    }
     &:last-child {
       margin-right: 0;
     }

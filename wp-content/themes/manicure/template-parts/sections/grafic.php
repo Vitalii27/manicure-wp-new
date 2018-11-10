@@ -5,7 +5,7 @@
     <div class="schedule-bg-grad"></div>
     <div class="container-fluid">
         <?php if (get_field('schedule_title')): ?>
-            <h3 class="title">
+            <h3 class="title shadow-text--light">
                 <?php the_field('schedule_title') ?>
             </h3>
         <?php endif; ?>
@@ -17,7 +17,7 @@
                             <div class="schedule_item-top schedule_item-top--<?php the_sub_field('block-color'); ?>"
                                  style="background-image: url(<?php the_sub_field('schedule_item-bg'); ?>)">
                                 <div class="schedule_item-content">
-                                    <div class="schedule_item-title"><?php the_sub_field('schedule_item-title'); ?>
+                                    <div class="schedule_item-title shadow-text"><?php the_sub_field('schedule_item-title'); ?>
                                     </div>
                                     <?php if (get_sub_field('schedule_item-icon')): ?>
                                         <div class="schedule_item-icon">
@@ -29,7 +29,7 @@
                             </div>
                         <?php endif; ?>
                         <?php if (get_sub_field('schedule_item-desc')): ?>
-                            <div class="schedule_item-bottom">
+                            <div class="schedule_item-bottom shadow-text--super-light">
                                 <?php the_sub_field('schedule_item-desc'); ?>
                             </div>
                         <?php endif; ?>
@@ -38,7 +38,7 @@
             </ul>
         <?php endif; ?>
         <?php if (get_field('bottom-text-grafic')): ?>
-        <div class="schedule_bottom-text">
+        <div class="schedule_bottom-text shadow-text--super-light">
             <?php the_field('bottom-text-grafic'); ?>
         </div>
         <?php endif; ?>

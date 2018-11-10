@@ -1,4 +1,4 @@
-<section class="section faq">
+<section class="section faq shadow-text--light">
     <?php if (get_field('faq_top-image')): ?>
         <img src="<?php the_field('faq_top-image') ?>" alt="img" class="faq_top">
     <?php endif; ?>

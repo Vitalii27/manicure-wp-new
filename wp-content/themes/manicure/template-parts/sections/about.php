@@ -18,7 +18,7 @@
                         <iframe width="560" height="315" src="<?php the_field('about-video_link') ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 <?php endif; ?>
-                <div class="about-school_desc">
+                <div class="about-school_desc shadow-text--super-light">
                     <?php if (get_field('about-desc-title')): ?>
                         <div class="about-school_desc-title"><?php the_field('about-desc-title') ?></div>
                     <?php endif; ?>
@@ -34,7 +34,7 @@
                 <ul class="about-school_list">
                     <?php while (have_rows('about-block-icon')): the_row(); ?>
 
-                    <li class="about-school_item">
+                    <li class="about-school_item shadow-text--super-light">
                         <?php if (get_sub_field('about-block-icon-img')): ?>
                         <div class="about-school_item-block">
                             <img src=" <?php the_sub_field('about-block-icon-img'); ?>" alt="icon" class="about-school_icon">

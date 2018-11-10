@@ -17,7 +17,7 @@
  *
  * @package WordPress
  */
-
+require __DIR__ . '/vendor/autoload.php';
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('DB_NAME', 'manicure');

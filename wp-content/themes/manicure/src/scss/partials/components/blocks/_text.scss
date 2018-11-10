@@ -1,45 +1,61 @@
-.text{
+.text {
   padding-top: 8rem;
   padding-bottom: 8rem;
   line-height: 1.4;
 }
-.text_content{
+
+.shadow-text {
+  text-shadow: 3px 3px 5px #000, 10px 9px 1em #000;
+}
+
+.shadow-text--light {
+  text-shadow: 1px 1px 0px #000, 1px 1px 2px #000;
+
+}
+
+.shadow-text--super-light {
+
+  text-shadow: 0px 0px 0 #000, 0px 0px 1px #000;
+}
+
+.text_content {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  h1{
+  h1 {
     font-size: 3.8rem;
     padding-bottom: 2.2rem;
   }
-  h2{
+  h2 {
     font-size: 2.6rem;
   }
-  h3{
+  h3 {
     font-size: 2.2rem;
   }
-  li{
+  li {
     list-style: disc;
 
   }
-  ul{
+  ul {
     padding-left: 2.5rem;
     padding-top: 1rem;
   }
 }
+
 @media only screen and (max-width: $screen-xs-max) {
   .text {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  .text_content{
+  .text_content {
 
-    h1{
+    h1 {
       font-size: 3rem;
       padding-bottom: 1.8rem;
     }
-    h2{
+    h2 {
       font-size: 2.2rem;
     }
-    h3{
+    h3 {
       font-size: 2rem;
     }
 

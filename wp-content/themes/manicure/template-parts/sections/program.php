@@ -2,13 +2,13 @@
     <div class="container-fluid">
         <div class="program_content">
             <?php if (get_field('program-title')): ?>
-                <h3 class="program_title"><?php the_field('program-title') ?></h3>
+                <h3 class="program_title shadow-text--light"><?php the_field('program-title') ?></h3>
             <?php endif; ?>
             <?php if (get_field('program-subtitle')): ?>
-                <div class="program_subtitle"><?php the_field('program-subtitle') ?></div>
+                <div class="program_subtitle shadow-text--light"><?php the_field('program-subtitle') ?></div>
             <?php endif; ?>
             <?php if (have_rows('program-list')): $count = 0; ?>
-                <ul class="program_list">
+                <ul class="program_list shadow-text--super-light">
                     <?php while (have_rows('program-list')): the_row(); ?>
                         <?php if (get_sub_field('program-item-bg')): ?>
                             <li class="program_item">
@@ -56,10 +56,10 @@
             <?php endif; ?>
             <div class="program_bottom">
                 <?php if (get_field('program-bottom-title')): ?>
-                    <div class="program_attention"><?php the_field('program-bottom-title') ?></div>
+                    <div class="program_attention shadow-text--light"><?php the_field('program-bottom-title') ?></div>
                 <?php endif; ?>
                 <?php if (get_field('program-bottom-desc')): ?>
-                    <div class="program_bottom-desc">
+                    <div class="program_bottom-desc shadow-text--light">
                         <?php the_field('program-bottom-desc') ?>
                     </div>
                 <?php endif; ?>

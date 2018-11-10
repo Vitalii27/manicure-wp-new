@@ -2,18 +2,18 @@
     <div class="container-fluid">
         <div class="reviews_content">
             <?php if (get_field('review-title')): ?>
-                <h3 class="title"><?php the_field('review-title'); ?></h3>
+                <h3 class="title shadow-text--light"><?php the_field('review-title'); ?></h3>
             <?php endif; ?>
             <?php if (have_rows('review-list')): ?>
                 <div class="reviews_slider js-review-slider">
                     <?php while (have_rows('review-list')):
                         the_row(); ?>
-                        <div class="reviews_wrapp">
+                        <div class="reviews_wrapp shadow-text--super-light">
                             <div class="reviews_block">
                                 <div class="reviews_inform">
                                     <?php if (get_sub_field('reviews-avatar')): ?>
                                         <div class="reviews_avatar">
-                                            <img src="<?php the_sub_field('reviews-avatar'); ?>" alt="avatar"
+                                            <img src="<?php the_sub_field('reviews-avatar'); ?>" alt="<?php the_sub_field('reviews-avatar-alt'); ?>"
                                                  class="reviews_img">
                                         </div>
                                     <?php endif; ?>

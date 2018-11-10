@@ -52,11 +52,14 @@
   .slick-current + .slick-active {
     transition: all .25s;
     transform: scale(1.295) !important;
-
+    position: relative;
+    z-index: 1;
   }
   .slick-current + .slick-active + .slick-active + .slick-active {
     transition: all .25s;
     transform: scale(1.295) !important;
+    position: relative;
+    z-index: 1;
   }
 }
 

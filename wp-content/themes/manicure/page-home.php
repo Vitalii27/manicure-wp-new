@@ -28,10 +28,21 @@ get_header(); ?>
 <?php get_template_part( './template-parts/sections/sing-up' ); ?>
 
 <?php get_template_part( './template-parts/sections/advantages' ); ?>
+<section class="section sub-section sub-section--advantages shadow-text--light" style="background-image: url(<?php the_field('under-advantages') ?>)">
+    <div class="container-fluid">
+        <?php if (get_field('under-advantages-text')): ?>
+            <div class="sub-section_content shadow-text">
+                <?php the_field('under-advantages-text') ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</section>
 <?php get_template_part( './template-parts/sections/partners' ); ?>
 
 <?php get_template_part( './template-parts/sections/about' ); ?>
+<?php get_template_part( './template-parts/sections/photo-study-class' ); ?>
 <?php get_template_part( './template-parts/sections/realy-study' ); ?>
+
 <?php get_template_part( './template-parts/sections/teachers' ); ?>
 <?php get_template_part( './template-parts/sections/numbers' ); ?>
 <?php get_template_part( './template-parts/sections/reviews' ); ?>

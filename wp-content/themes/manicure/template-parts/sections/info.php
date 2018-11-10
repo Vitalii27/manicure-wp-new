@@ -1,6 +1,6 @@
 <section class="section section-info">
-    <div class="section-info_content">
-        <div class="section-info_left section-info-block">
+    <div class="section-info_content ">
+        <div class="section-info_left section-info-block shadow-text--super-light">
             <div class="section-info_wrap-left">
             <?php if (get_field('info-left-img')): ?>
                 <img src="<?php the_field('info-left-img') ?>" alt="img">

@@ -1,6 +1,6 @@
 <section class="section section-pink" style="background-image: url(<?php the_field('bg-pink_img') ?>)">
     <div class="container-fluid">
-        <div class="section-pink_content">
+        <div class="section-pink_content shadow-text--super-light">
             <?php if (get_field('section-pink-title')): ?>
                 <h3 class="title"><?php the_field('section-pink-title') ?> </h3>
             <?php endif; ?>

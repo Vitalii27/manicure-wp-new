@@ -1,11 +1,11 @@
 <section class="section advantages">
     <div class="container-fluid">
-        <div class="advantages_content">
+        <div class="advantages_content ">
             <?php if (get_field('advantages-title')): ?>
-                <h3 class="title"><?php the_field('advantages-title') ?></h3>
+                <h3 class="title shadow-text--light"><?php the_field('advantages-title') ?></h3>
             <?php endif; ?>
             <?php if (have_rows('advantages-list')): ?>
-                <ul class="advantages_list">
+                <ul class="advantages_list shadow-text--super-light">
                     <?php while (have_rows('advantages-list')): the_row(); ?>
 
                         <li class="advantages_item">

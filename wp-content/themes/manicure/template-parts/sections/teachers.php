@@ -2,13 +2,13 @@
     <div class="container-fluid">
         <div class="program_content">
             <?php if (get_field('teacher-title')): ?>
-                <h3 class="title"><?php the_field('teacher-title') ?></h3>
+                <h3 class="title shadow-text--light"><?php the_field('teacher-title') ?></h3>
             <?php endif; ?>
             <?php if (have_rows('teacher-list')): ?>
                 <ul class="program_list">
                     <?php while (have_rows('teacher-list')): the_row(); ?>
 
-                        <li class="program_item">
+                        <li class="program_item shadow-text--super-light">
                             <?php if (get_sub_field('teacher-bg')): ?>
                                 <div class="program_img"
                                      style="background-image: url(<?php the_sub_field('teacher-bg'); ?>)">

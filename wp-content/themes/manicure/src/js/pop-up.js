@@ -124,6 +124,7 @@ jQuery(function ($) {
     var wpcf7Elm2 = document.getElementById('wpcf7-f10-o1');
 
     PopUpModule.initInline(".js-pop-up");
+    PopUpModule.initImg(".js-pop-up-img");
     if (wpcf7Elm) {
         wpcf7Elm.addEventListener('wpcf7mailsent', function (event) {
             $.magnificPopup.close();

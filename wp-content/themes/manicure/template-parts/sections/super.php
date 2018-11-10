@@ -1,4 +1,4 @@
-<section class="section super-action">
+<section class="section super-action shadow-text--super-light">
     <?php if (get_field('section-pink-red')): ?>
         <div class="super-action_red">
             <h3><?php the_field('section-pink-red') ?></h3>

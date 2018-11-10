@@ -5,7 +5,7 @@
         </div>
     <?php endif; ?>
     <div class="container-fluid">
-        <div class="hero_content">
+        <div class="hero_content shadow-text--light">
             <?php if (get_field('hero_title')): ?>
                 <div class="hero_title"><?php the_field('hero_title') ?></div>
             <?php endif; ?>
@@ -25,7 +25,7 @@
             <?php if (have_rows('icon-hero-reap')): ?>
                 <ul class="hero_list">
                     <?php while (have_rows('icon-hero-reap')): the_row(); ?>
-                        <li class="hero_item">
+                        <li class="hero_item shadow-text--super-light">
                             <?php if (get_sub_field('icon-img-hero')): ?>
                                 <div class="hero_item-block">
                                     <img src="<?php the_sub_field('icon-img-hero'); ?>" alt="icon"

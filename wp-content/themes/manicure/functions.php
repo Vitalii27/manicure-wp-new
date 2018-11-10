@@ -46,6 +46,7 @@ if ( ! function_exists( 'manicure_setup' ) ) :
         register_nav_menus( array(
             'menu-1' => esc_html__( 'Primary', 'manicure' ),
             'footer' => esc_html__( 'Footer', 'manicure' ),
+            'stati' => esc_html__( 'Stati', 'manicure' ),
         ) );
 
         /*
@@ -196,6 +197,8 @@ require get_template_directory() . '/inc/enqueue.php';
  */
 require get_template_directory() . '/inc/add-svg.php';
 
+
+require get_template_directory() . '/inc/admin/theme-setting.php';
 /**
  * Customizer additions.
  */

@@ -12,18 +12,22 @@
 ?>
 
 </main>
-
+<?php $header = get_option('header'); ?>
+<?php $footer = get_option('footer'); ?>
 <footer class="footer" id="footer">
     <div class="container-fluid">
         <div class="footer_container">
-            <?php if (get_field('footer-logo')): ?>
+
                 <div class="footer_logo">
-                    <a href="#hero" class="footer_link"> <img src="<?php the_field('footer-logo') ?>" alt="logo"
-                                                              class="footer_img">
-                        <?php the_field('footer-logo-text') ?>
-                    </a>
+                    <?php if (!empty($header['header-logo'])) {
+                        ?>
+                        <a href="#hero" class="footer_link"> <img src="<?php echo $header['header-logo']; ?>" alt="logo"
+                                                                  class="footer_img">
+                            <p><?php echo $header['header-logo-text']; ?></p>
+                        </a>
+                    <?php } ?>
                 </div>
-            <?php endif; ?>
+
             <div class="footer_copy">
                 <div class="footer_menu">
                     <?php
@@ -39,31 +43,42 @@
 
                     ?>
                 </div>
-                <?php if (get_field('footer-menu-text')): ?>
-                    <div class="footer_copy-text"><?php the_field('footer-menu-text') ?></div>
+                <?php if (!empty($footer['footer-menu-text'])) {
+                    ?>
+                    <div class="footer_copy-text"><?php echo $footer['footer-menu-text']; ?></div>
                     <div class="footer_links">
-                        <?php if (get_field('footer-menu-text')): ?>
-                            <a href="<?php the_field('link_web') ?>" target="_blank"
-                               class="footer_link-web"><?php the_field('link_web_text') ?></a>
-                        <?php endif; ?>
-                        <?php if (get_field('dates-link')): ?>
+                        <?php if (!empty($footer['footer_link-text-web'])) {
+                            ?>
+                            <a href="<?php echo $footer['link-wb-st']; ?>" target="_blank"
+                               class="footer_link-web"><?php echo $footer['footer_link-text-web']; ?></a>
+                        <?php } ?>
+                        <?php if (!empty($footer['footer_link-data'])) {
+                            ?>
                             <a href="<?php echo get_template_directory_uri() ?>/assets/pdf/dates.pdf" target="_blank"
-                               class="footer_link-web"><?php the_field('dates-link') ?></a>
-                        <?php endif; ?>
+                               class="footer_link-web"><?php echo $footer['footer_link-data']; ?></a>
+                        <?php } ?>
                     </div>
-
-                <?php endif; ?>
+                <?php } ?>
             </div>
-            <?php if (have_rows('footer-list')): ?>
-                <div class="footer_social">
-                    <?php while (have_rows('footer-list')):
-                        the_row(); ?>
-                        <a href="<?php the_sub_field('footer-link'); ?>"><img
-                                    src="<?php the_sub_field('footer-icon'); ?>" alt="icon"></a>
-                    <?php endwhile; ?>
-                </div>
-            <?php endif; ?>
 
+            <div class="footer_social">
+                <?php if (!empty($footer['vk-icon'])) {
+                    ?>
+                    <a href="<?php echo $footer['vk-link']; ?>"><img
+                                src="<?php echo $footer['vk-icon']; ?>" alt="icon"></a>
+                <?php } ?>
+                <?php if (!empty($footer['fb-icon'])) {
+                    ?>
+                    <a href="<?php echo $footer['fb-link']; ?>"><img
+                                src="<?php echo $footer['fb-icon']; ?>" alt="icon"></a>
+                <?php } ?>
+                <?php if (!empty($footer['insta-icon'])) {
+                    ?>
+                    <a href="<?php echo $footer['insta-link']; ?>"><img
+                                src="<?php echo $footer['insta-icon']; ?>" alt="icon"></a>
+                <?php } ?>
+
+            </div>
 
         </div>
 
