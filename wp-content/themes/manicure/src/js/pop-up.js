@@ -121,13 +121,17 @@ jQuery(function ($) {
 
     var wpcf7Elm = document.getElementById('wpcf7-f161-o2');
     var wpcf7Elm3 = document.getElementById('wpcf7-f161-o5');
-    var wpcf7Elm2 = document.getElementById('wpcf7-f10-o1');
+    var wpcf7Elm2 = document.getElementById('wpcf7-f10-o2');
+    var wpcf7Elm4 = document.getElementById('wpcf7-f10-o1');
+    var wpcf7Elm5 = document.getElementById('wpcf7-f10-o3');
+    var wpcf7Elm6 = document.getElementById('wpcf7-f10-o4');
 
     PopUpModule.initInline(".js-pop-up");
     PopUpModule.initImg(".js-pop-up-img");
     if (wpcf7Elm) {
         wpcf7Elm.addEventListener('wpcf7mailsent', function (event) {
             $.magnificPopup.close();
+            amitad();
             alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
 
         }, false);
@@ -135,13 +139,31 @@ jQuery(function ($) {
     if (wpcf7Elm3) {
         wpcf7Elm3.addEventListener('wpcf7mailsent', function (event) {
             $.magnificPopup.close();
+            amitad();
             alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
 
         }, false);
     }
     if (wpcf7Elm2) {
         wpcf7Elm2.addEventListener('wpcf7mailsent', function (event) {
-
+            amitad();
+            alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
+        }, false);
+    }
+    if (wpcf7Elm4) {
+        wpcf7Elm4.addEventListener('wpcf7mailsent', function (event) {
+            amitad();
+            alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
+        }, false);
+    }
+    if (wpcf7Elm5) {
+        wpcf7Elm5.addEventListener('wpcf7mailsent', function (event) {
+            amitad();
+            alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
+        }, false);
+    }    if (wpcf7Elm6) {
+        wpcf7Elm6.addEventListener('wpcf7mailsent', function (event) {
+            amitad();
             alertSucsess.showAlert('<i class="fa fa-info-circle" aria-hidden="true"></i> Ваше сообщение отправлено');
         }, false);
     }

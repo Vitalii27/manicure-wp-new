@@ -1,14 +1,11 @@
 .arrow-slide {
-  background-image: url('../../assets/images/icon/arrow-slide.png');
+  background-image: url('../../assets/images/icon/arrow-slide-orange.png');
 
   background-position: center;
   background-repeat: no-repeat;
   width: 4.5rem;
   height: 4.5rem;
-  &:hover {
-    background-image: url('../../assets/images/icon/arrow-slide-orange.png');
 
-  }
 }
 
 .arrow-right-slide {
@@ -42,4 +39,13 @@
 }
 .slick-dots{
   bottom: -22px;
+}
+@media only screen and (max-width: $screen-xs-max) {
+  .slider_btn--next {
+    right: -1rem;
+  }
+
+  .slider_btn--prev {
+    left: -1rem;
+  }
 }

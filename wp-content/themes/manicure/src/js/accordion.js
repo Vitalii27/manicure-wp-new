@@ -1,4 +1,8 @@
 jQuery(function ($) {
+    var date = new Date();
+    var timestamp = date.getTime()
+    console.log(date);
+    // console.log(timestamp);
     var $accrodions = $(".js-accordions");
     var $accrodion = $accrodions.find(".accordion");
     var closeClass = "is-close";

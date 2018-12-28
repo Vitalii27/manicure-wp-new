@@ -101,13 +101,30 @@ $menu-btn-color--active: $black;
   }
 }
 
+.menu-text {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10%;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ec9e14;
+}
+
 @media only screen and (max-width: $screen-sm-max) {
   .menu-btn {
     display: inline-block;
   }
+  .menu-text {
+    display: block;
+
+  }
 }
 
 @media only screen and (max-width: $screen-xs-max) {
+
   .menu-btn {
     width: 5.8rem;
     height: 5.8rem;
@@ -145,6 +162,17 @@ $menu-btn-color--active: $black;
 @media only screen and (max-width: $screen-xxs) {
   .menu-btn {
     height: 4.8rem;
-    right: -1.7rem;
+    right: -.3rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .menu-btn {
+    height: 4.8rem;
+    right: -1.4rem;
+  }
+  .menu-text {
+    display: none !important;
+
   }
 }

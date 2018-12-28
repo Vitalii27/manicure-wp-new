@@ -1,4 +1,6 @@
+
 <button class="menu-btn js-toggle-menu" aria-labelledby="side-menu">
+    <span class="menu-text shadow-text--super-light">Меню</span>
 	<span class="menu-btn_inner">
 		<span class="menu-btn_top"></span>
 		<span class="menu-btn_middle"></span>

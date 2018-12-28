@@ -23,6 +23,7 @@ get_header(); ?>
 
 <?php get_template_part( './template-parts/sections/program' ); ?>
 <?php //get_template_part( './template-parts/sections/super' ); ?>
+<?php get_template_part( './template-parts/sections/video' ); ?>
 <?php get_template_part( './template-parts/sections/faq' ); ?>
 <?php get_template_part( './template-parts/sections/diplom' ); ?>
 <?php get_template_part( './template-parts/sections/sing-up' ); ?>

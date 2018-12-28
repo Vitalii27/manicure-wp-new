@@ -104,6 +104,7 @@
                                     class="header_img">
                             <p class="shadow-text--super-light">
                                 <strong><?php echo $header['header-logo-text']; ?></strong></p>
+                            <div class="logo-text-mobile shadow-text--super-light"> Учебный Центр</div>
                         </a>
                     <?php } ?>
                 </div>
