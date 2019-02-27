@@ -8,3 +8,16 @@
 .ajax-loader{
   display: none !important;
 }
+.ask-questions, .advantages-page, .applications-for{
+  display: none !important;
+}
+.page-template-page-ask, .page-template-page-advantages, .page-template-page-info-for{
+  main{
+    padding-top: 9rem;
+  }
+}
+@media only screen and (max-width: $screen-sm-max) {
+  .ask-questions, .advantages-page, .applications-for{
+    display: block !important;
+  }
+}

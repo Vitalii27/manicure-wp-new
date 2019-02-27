@@ -118,7 +118,7 @@ var PopUpModule = (function ($) {
 }(jQuery));
 
 jQuery(function ($) {
-
+    PopUpModule.initImg(".js-pop-up-img");
     var wpcf7Elm = document.getElementById('wpcf7-f161-o2');
     var wpcf7Elm3 = document.getElementById('wpcf7-f161-o5');
     var wpcf7Elm2 = document.getElementById('wpcf7-f10-o2');
@@ -127,7 +127,7 @@ jQuery(function ($) {
     var wpcf7Elm6 = document.getElementById('wpcf7-f10-o4');
 
     PopUpModule.initInline(".js-pop-up");
-    PopUpModule.initImg(".js-pop-up-img");
+
     if (wpcf7Elm) {
         wpcf7Elm.addEventListener('wpcf7mailsent', function (event) {
             $.magnificPopup.close();

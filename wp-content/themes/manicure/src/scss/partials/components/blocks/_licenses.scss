@@ -1,0 +1,66 @@
+.licenses {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  &_images {
+    display: flex;
+    margin-top: 2rem;
+  }
+  &_single-img {
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+    a {
+      display: block;
+      position: relative;
+
+      &:before {
+        transition: all .2s;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $black;
+        opacity: 0;
+      }
+      &:after {
+        content: '';
+        width: 6.5rem;
+        height: 6rem;
+        background-image: url(https://shkola-manikyura.com/wp-content/uploads/2019/01/search.png);
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        visibility: hidden;
+      }
+      &:hover {
+
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:before {
+          opacity: .3;
+        }
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .licenses {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &_images {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+}

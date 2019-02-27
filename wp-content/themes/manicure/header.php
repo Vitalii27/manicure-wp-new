@@ -49,6 +49,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="yandex-verification" content="b59cc5f407bab4a7"/>
     <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="google-site-verification" content="HsqlloLrpbVYwOXZDintkvI89d6vEVQ4JDrTvtPPYQU" />
+
     <script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
 
     <?php wp_head(); ?>

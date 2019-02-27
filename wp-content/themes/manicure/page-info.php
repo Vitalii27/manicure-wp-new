@@ -18,7 +18,7 @@ get_header(); ?>
             <h3 class="program_title shadow-text--light"><?php the_field('info-title-page') ?></h3>
         <?php endif; ?>
         <?php if (get_field('info-desc-page')): ?>
-        <div class="section-info_desc">
+        <div class="section-info-page_desc">
             <?php the_field('info-desc-page') ?>
         </div>
         <?php endif; ?>

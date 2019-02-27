@@ -10,6 +10,7 @@
  */
 get_header(); ?>
 <?php get_template_part( './template-parts/sections/about' ); ?>
+<?php get_template_part( './template-parts/sections/licenses' ); ?>
 <?php get_template_part( './template-parts/sections/photo-study-class' ); ?>
 <?php get_template_part( './template-parts/sections/text' ); ?>
 <?php get_template_part( './template-parts/sections/contacts' ); ?>

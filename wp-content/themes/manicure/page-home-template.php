@@ -793,6 +793,26 @@ get_header(); ?>
         </div>
     </div>
 </section>
+<section class="section licenses">
+    <div class="container-fluid">
+        <h3 class="title">Дипломы и лицензии</h3>
+        <div class="licenses_images">
+            <div class="licenses_single-img js-pop-up-img">
+                <a href="https://shkola-manikyura.com/wp-content/uploads/2019/01/lic_1-min.png"> <img src="https://shkola-manikyura.com/wp-content/uploads/2019/01/lic_1-min.png" alt="img"></a>
+
+            </div>
+            <div class="licenses_single-img js-pop-up-img">
+                <a href="https://shkola-manikyura.com/wp-content/uploads/2019/01/lic_2-min.png"> <img src="https://shkola-manikyura.com/wp-content/uploads/2019/01/lic_2-min.png" alt="img"></a>
+
+            </div>
+            <div class="licenses_single-img js-pop-up-img">
+                <a href="https://shkola-manikyura.com/wp-content/uploads/2019/01/lic_3-min.png"> <img src="https://shkola-manikyura.com/wp-content/uploads/2019/01/lic_3-min.png" alt="img"></a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 <section class="section program realy-study realy-study--second">
     <div class="container-fluid">
         <div class="program_content">
@@ -1745,65 +1765,58 @@ get_header(); ?>
     <div class="schedule-bg-grad"></div>
     <div class="container-fluid">
         <h3 class="title shadow-text--light">
-            Выберите для себя удобный график обучения! </h3>
+            Выберите для себя удобный график обучения!            </h3>
         <ul class="schedule_list">
             <li class="schedule_item">
-                <div class="schedule_item-top schedule_item-top--orange"
-                     style="background-image: url(https://shkola-manikyura.com/wp-content/uploads/2018/09/img-graf.png)">
+                <div class="schedule_item-top schedule_item-top--orange" style="background-image: url(https://shkola-manikyura.com/wp-content/uploads/2019/01/fotolia_30596491.png)">
                     <div class="schedule_item-content">
-                        <div class="schedule_item-title shadow-text">дневная группа обучения</div>
+                        <div class="schedule_item-title shadow-text">дневная группа обучения                                    </div>
                         <div class="schedule_item-icon">
-                            <img src="https://shkola-manikyura.com/wp-content/uploads/2018/09/L0001.png" alt="icon"
-                                 class="schedule_item-img">
+                            <img src="https://shkola-manikyura.com/wp-content/uploads/2019/01/sun.png" alt="icon" class="schedule_item-img">
                         </div>
                     </div>
                 </div>
                 <div class="schedule_item-bottom shadow-text--super-light">
-                    <p><strong>Пн:</strong> с 12:00 &#8212; 18:00</p>
-                    <p><strong>Вт</strong>: с 12:00 &#8212; 18:00</p>
-                    <p><strong>Ср:</strong> с 12:00 &#8212; 18:00</p>
-                    <p><strong> Чт</strong>: с 12:00 &#8212; 18:00</p>
-                    <p><strong> Пт:</strong> с 12:00 &#8212; 18:00</p>
+                    <p><strong>Пн:</strong> с 12:00 — 18:00</p>
+                    <p><strong>Вт</strong>: с 12:00 — 18:00</p>
+                    <p><strong>Ср:</strong> с 12:00 — 18:00</p>
+                    <p><strong> Чт</strong>: с 12:00 — 18:00</p>
+                    <p><strong> Пт:</strong> с 12:00 — 18:00</p>
                 </div>
             </li>
             <li class="schedule_item">
-                <div class="schedule_item-top schedule_item-top--red"
-                     style="background-image: url(https://shkola-manikyura.com/wp-content/uploads/2018/09/5165.png)">
+                <div class="schedule_item-top schedule_item-top--red" style="background-image: url(https://shkola-manikyura.com/wp-content/uploads/2019/01/2840898.png)">
                     <div class="schedule_item-content">
-                        <div class="schedule_item-title shadow-text">вечерняя группа обучения</div>
+                        <div class="schedule_item-title shadow-text">вечерняя группа обучения                                    </div>
                         <div class="schedule_item-icon">
-                            <img src="https://shkola-manikyura.com/wp-content/uploads/2018/09/L0002.png" alt="icon"
-                                 class="schedule_item-img">
+                            <img src="https://shkola-manikyura.com/wp-content/uploads/2019/01/moon-1.png" alt="icon" class="schedule_item-img">
                         </div>
                     </div>
                 </div>
                 <div class="schedule_item-bottom shadow-text--super-light">
-                    <p><strong>Вт</strong>: с 19:00 &#8212; 22:00</p>
-                    <p><strong>Ср:</strong> с 19:00 &#8212; 22:00</p>
-                    <p><strong> Чт</strong>: с 19:00 &#8212; 22:00</p>
+                    <p><strong>Вт</strong>: с 19:00 — 22:00</p>
+                    <p><strong>Ср:</strong> с 19:00 — 22:00</p>
+                    <p><strong> Чт</strong>: с 19:00 — 22:00</p>
                     <p>&nbsp;</p>
                 </div>
             </li>
             <li class="schedule_item">
-                <div class="schedule_item-top schedule_item-top--orange"
-                     style="background-image: url(https://shkola-manikyura.com/wp-content/uploads/2018/09/6165.png)">
+                <div class="schedule_item-top schedule_item-top--orange" style="background-image: url(https://shkola-manikyura.com/wp-content/uploads/2019/01/setwalls.png)">
                     <div class="schedule_item-content">
-                        <div class="schedule_item-title shadow-text">группа выходного дня</div>
+                        <div class="schedule_item-title shadow-text">группа выходного дня                                    </div>
                         <div class="schedule_item-icon">
-                            <img src="https://shkola-manikyura.com/wp-content/uploads/2018/09/L0003.png" alt="icon"
-                                 class="schedule_item-img">
+                            <img src="https://shkola-manikyura.com/wp-content/uploads/2019/01/balloons.png" alt="icon" class="schedule_item-img">
                         </div>
                     </div>
                 </div>
                 <div class="schedule_item-bottom shadow-text--super-light">
-                    <p><strong>Сб</strong>: с 10:00 &#8212; 15:00</p>
-                    <p><strong>Вс:</strong> с 10:00 &#8212; 15:00</p>
+                    <p><strong>Сб</strong>: с 10:00 — 15:00</p>
+                    <p><strong>Вс:</strong> с 10:00 — 15:00</p>
                 </div>
             </li>
         </ul>
         <div class="schedule_bottom-text shadow-text--super-light">
-            <p>Наши ученики <span style="color: #d02121;"><span style="color: #d02121;"><b>обучаются до Полного Освоения Курса,</b></span></span>
-                не учитывая часы, не Доплачивая за Дополнительные занятия!</p>
+            <p>Наши ученики <span style="color: #d02121;"><span style="color: #d02121;"><b>обучаются до Полного Освоения Курса,</b></span></span> не учитывая часы, не Доплачивая за Дополнительные занятия!</p>
         </div>
     </div>
 </div>
